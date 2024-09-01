@@ -1,0 +1,1 @@
+file = open('dad_jokes.txt', 'r')
