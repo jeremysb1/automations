@@ -4,4 +4,6 @@ with open('dad_jokes.csv', 'r') as csv_file:
     csv_reader = csv.reader(csv_file)
 
     for row in csv_reader:
-        print(row)
+        joke = row[1]
+        rating = row[2]
+        print(f'"{joke}"; this joke has a rating of {rating}.')
