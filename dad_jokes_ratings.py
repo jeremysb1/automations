@@ -23,7 +23,7 @@ with open('dad_jokes.csv', 'r') as csv_file:
 
         modified_dad_jokes.append(row)
 
-with open(modified_dad_jokes.csv, 'w', newline='') as new_csv_file:
+with open('modified_dad_jokes.csv', 'w', newline='') as new_csv_file:
     csv_writer = csv.wrtier(new_csv_file)
 
     csv_writer.writerows(modified_dad_jokes)
