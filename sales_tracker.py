@@ -31,3 +31,8 @@ for product_id in product_ids:
     csv_data.append(row)
 
     sale_id += 1
+
+with open('product_sales.csv', 'w', newline='') as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(['current_date', 'sale_id', 'product_id', 'product_name', 'product_price'])
+    csv_writer.writerows(csv_data)
