@@ -16,3 +16,12 @@ product_data = {
 
 with open('product_sales.txt', 'r') as file:
     product_ids = file.readlines()
+
+sale_id = 1
+current_date = datetime.date.today()
+for product_id in product_ids:
+    product_id = product_id.strip()
+    product_name = product_data[product_id][0]
+    product_price = product_data[product_id][1]
+
+    row = [current_date, sale_id, product_id, product_name, product_price]
