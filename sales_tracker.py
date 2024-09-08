@@ -13,3 +13,6 @@ product_data = {
     "P009": ["Smartphone", 600],
     "P010": ["External Hard Drive", 100],
 }
+
+with open('product_sales.txt', 'r') as file:
+    product_ids = file.readlines()
