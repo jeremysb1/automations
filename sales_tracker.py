@@ -14,6 +14,8 @@ product_data = {
     "P010": ["External Hard Drive", 100],
 }
 
+csv_data = []
+
 with open('product_sales.txt', 'r') as file:
     product_ids = file.readlines()
 
@@ -25,3 +27,7 @@ for product_id in product_ids:
     product_price = product_data[product_id][1]
 
     row = [current_date, sale_id, product_id, product_name, product_price]
+
+    csv_data.append(row)
+
+    sale_id += 1
