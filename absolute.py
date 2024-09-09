@@ -1,0 +1,1 @@
+path = '~/Desktop/automations/absolute_v_relative/dad_jokes_copy.txt'
