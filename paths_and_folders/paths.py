@@ -2,4 +2,4 @@ from pathlib import Path
 
 p = Path('.')
 
-print(p)
+print(p, ' is the current working directory.')
